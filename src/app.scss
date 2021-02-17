@@ -12,7 +12,9 @@ ul{
     list-style-type: none;
 }
 
-
+body{
+    font-family: $main-font;
+}
 
 /* HEADER */
 
@@ -65,18 +67,66 @@ ul{
                 align-items: center;
             
                 > li{
-                    padding-left: 45px;
-                    
+                    padding-left: 35px;
+
+                    > span{
+                        padding-left: 5px;
+                        color: $dark-grey;
+                    }//end angle arrow                    
                     > .logo{
                         width: 100px;
                         margin-bottom: 5px;
-                    }
-                }
-
+                    } //end logo
+                }// end li navbar main
             }//end ul nav -main
-
         } // end nav-top-main
-
-
     }//end nav-top-container
 }// end nav-top
+
+.jumbotron{
+    height: 500px;
+    width: 100%;
+    background-image: url($bg-jumbotron);
+    
+
+    &-container{
+        @include container;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 50px;
+        
+        .jumbotron-description{
+            width: 350px;
+            color: $text-grey;
+
+            .jumbotron-title{
+                font-size: 30px;
+                font-weight: 400;
+                > span{
+                    font-style: italic;
+                    color: $purple;
+                }
+            }//end jumbotron title
+
+            .jumbotron-title-description{
+                font-size: 20px;
+            }// end title description
+            .jumbotron-list{
+                padding: 20px 0 20px 0;
+                > li{
+                    padding: 0 0 10px 15px;
+                    font-size: 18px;
+                } //end li description                
+            }// end jumbotron list
+            .jumbotron-trial{
+                padding: 15px;
+                width: 250px;
+                border: 2px solid $text-grey;
+                display: flex;
+                justify-content: space-around;
+            }
+
+        }//end jumbotron description
+
+    } // end Jumbotron Container;
+} //end Jumbotron

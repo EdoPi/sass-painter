@@ -9,6 +9,10 @@ ul {
   list-style-type: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /* HEADER */
 /* NAV TOP */
 .nav-top {
@@ -58,9 +62,56 @@ ul {
   align-items: center;
 }
 .nav-top-container .nav-top-main > ul > li {
-  padding-left: 45px;
+  padding-left: 35px;
+}
+.nav-top-container .nav-top-main > ul > li > span {
+  padding-left: 5px;
+  color: #767676;
 }
 .nav-top-container .nav-top-main > ul > li > .logo {
   width: 100px;
   margin-bottom: 5px;
+}
+
+.jumbotron {
+  height: 500px;
+  width: 100%;
+  background-image: url("../img/hero-pe-8.jpg");
+}
+.jumbotron-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+.jumbotron-container .jumbotron-description {
+  width: 350px;
+  color: #2D2D2D;
+}
+.jumbotron-container .jumbotron-description .jumbotron-title {
+  font-size: 30px;
+  font-weight: 400;
+}
+.jumbotron-container .jumbotron-description .jumbotron-title > span {
+  font-style: italic;
+  color: #AF19A4;
+}
+.jumbotron-container .jumbotron-description .jumbotron-title-description {
+  font-size: 20px;
+}
+.jumbotron-container .jumbotron-description .jumbotron-list {
+  padding: 20px 0 20px 0;
+}
+.jumbotron-container .jumbotron-description .jumbotron-list > li {
+  padding: 0 0 10px 15px;
+  font-size: 18px;
+}
+.jumbotron-container .jumbotron-description .jumbotron-trial {
+  padding: 15px;
+  width: 250px;
+  border: 2px solid #2D2D2D;
+  display: flex;
+  justify-content: space-around;
 }
