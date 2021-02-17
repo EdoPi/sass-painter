@@ -97,7 +97,6 @@ body{
         
         
         .jumbotron-description{
-            width: 350px;
             color: $text-grey;
 
             .jumbotron-title{
@@ -231,6 +230,24 @@ body{
         height: 630px;
         background-repeat: no-repeat;
         background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .play{
+            width: 200px;
+            height: 200px;
+            background: rgb(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            > i{
+                font-size: 100px;
+                color: $purple;
+            }
+        }
+
     } // end row-second
 
     &-row-third {

@@ -87,7 +87,6 @@ body {
   justify-content: flex-end;
 }
 .jumbotron-container .jumbotron-description {
-  width: 350px;
   color: #2D2D2D;
 }
 .jumbotron-container .jumbotron-description .jumbotron-title {
@@ -204,6 +203,22 @@ body {
   height: 630px;
   background-repeat: no-repeat;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overview-row-second .play {
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.overview-row-second .play > i {
+  font-size: 100px;
+  color: #AF19A4;
 }
 .overview-row-third {
   background-image: url("../img/flow-icons-bg.png");
