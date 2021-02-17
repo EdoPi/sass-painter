@@ -84,16 +84,17 @@ body{
 }// end nav-top
 
 .jumbotron{
-    height: 500px;
+    height: 460px;
     width: 100%;
     background-image: url($bg-jumbotron);
+    padding: 20px 0;
     
 
     &-container{
         @include container;
         display: flex;
         justify-content: flex-end;
-        padding-top: 50px;
+        
         
         .jumbotron-description{
             width: 350px;
@@ -116,6 +117,10 @@ body{
                 > li{
                     padding: 0 0 10px 15px;
                     font-size: 18px;
+                    > i{
+                        padding-right: 10px;
+                        color: #bbb;
+                    }
                 } //end li description                
             }// end jumbotron list
             .jumbotron-trial{
@@ -129,11 +134,141 @@ body{
         }//end jumbotron description
 
         .jumbotron-price-box{
-            width: 350px;
-            background-color: black;
+            width: 400px;
+            background-color:#171717;
             color: white;
-            height: 80%;
             margin-left: 80px;
-        }
+            padding-top: 20px;
+            height: 100%;
+            
+            &-row{
+                display: flex;
+                position: relative;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 15px 0 15px;
+                
+                &:first-child{
+                    font-size: 25px;
+                }
+
+                .price-download{
+                    position: absolute;
+                    font-size: 15px;
+                    bottom: 10px;
+                    left: 15px;
+                    color:$dark-grey ;
+                }                
+            } // end price box-row
+
+            .price-button-container{
+                margin-top: 30px;
+
+                .buynow-button{
+                    background-color: $blue-button;
+                    margin-left: 15px;
+                    padding:10px 40px 10px 40px;
+                }
+            }// end button            
+        }//end jumbotron price-box
     } // end Jumbotron Container;
 } //end Jumbotron
+
+.nav-bottom{
+    height: 60px;
+    background-color: #E2E2E2;
+    display: flex;
+    justify-content: center;
+
+    > ul{
+        height: 100%;
+        width: 600px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        > li {
+            font-size: 18px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 15px 0;
+            color: $text-grey;
+            &:hover{
+                background-color: #eee ;
+            }
+        }
+    }
+}// end navbar-bottom
+
+.overview{
+    background-image: url($bg-overview);
+
+    &-row-first{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 100px;
+
+        .overview-title{
+            font-size:40px;
+
+        }
+        .overview-payoff{
+            width: 50%;
+            padding-top: 20px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 30px;
+            
+        }
+    }// end row first
+
+    &-row-second{
+        padding-top: 50px;
+        background-image: url($bg-overview-second-row);
+        background-position: 40%;
+        height: 630px;
+        background-repeat: no-repeat;
+        background-color: white;
+    } // end row-second
+
+    &-row-third {
+        background-image: url($bg-overview-third-row);
+        background-position: center;
+        background-size: 1300px;
+        background-repeat: no-repeat;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        padding: 200px 0 100px 0;
+        
+        .icon-wrapper{
+            width: 60%;
+            display: flex;
+            .icon{
+                @include overview-icon;
+                
+                
+                > img{
+                    width: 200px;
+                }//end  icon-image
+
+                > h2{
+                    font-size: 35px;
+                    padding: 70px 0 25px 0;
+                    font-weight: 400;
+                }
+
+                > div{
+                    width: 60%;
+                    font-size: 18px;
+                }
+
+            }
+        }
+        
+
+    }//end row-third
+
+}
